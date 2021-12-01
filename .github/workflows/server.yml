@@ -1,4 +1,4 @@
-name: Deploy to gh-pages
+name: Deploy to server
 
 on:
   push:
@@ -42,6 +42,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
           source: deploy_dist
           target: /home/snadka2/testVueApp
